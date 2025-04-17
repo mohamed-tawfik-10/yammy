@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/logo (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <div
+        class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin text-white fa-5x"></i>
+    </div>
+
+    <section id="sideNavBar" class="position-fixed min-vh-100 top-0 d-flex">
+        <div class="navTab bg-black d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul>
+                    <li class="py-2"><a href="#" class="search text-white">Search</a></li>
+                    <li class="py-2"><a href="#" class="category text-white">Categories</a></li>
+                    <li class="py-2"><a href="#" class="area text-white">Area</a></li>
+                    <li class="py-2"><a href="#" class="ingredients text-white">Ingredients</a></li>
+                    <li class="py-2"><a href="#" class="contact text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="d-flex">
+                    <i class="fa-brands fa-facebook text-white me-2"></i>
+                    <i class="fa-brands fa-twitter text-white me-2"></i>
+                    <i class="fa-solid fa-globe d-block text-white"></i>
+                </div>
+                <p class="text-white">Copyright Â© 2019 All Rights<br> Reserved.</p>
+            </div>
+        </div>
+        <div
+            class="nav-header d-flex position-relative flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img src="images/logo (1).png" width="50" alt="logo">
+            <i class="position-absolute fa-solid open-close-icon fa-2x fa-align-justify" id="openSideNavBar"></i>
+            <i class="position-absolute fa-solid open-close-icon fa-2x fa-x fa-align-justify" id="CloseSideNavBar"></i>
+            <ul class="position-absolute">
+                <li> <i class="fa-solid fa-globe d-block"></i></li>
+                <li><i class="fa-solid fa-share-nodes"></i> </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="homeSection ms-2 mt-5">
+        <div class="container">
+            <div class="row gy-4" id="mealsContainer">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="mt-4 d-none">
+        <div class="container">
+            <div class="form d-flex justify-content-center">
+                <input type="text" onkeyup="searchByName(this.value)"
+                    class="inputSearchByName form-control bg-transparent text-white me-4" placeholder="Search By Name">
+
+                <input type="text" onkeyup="searchByFirstLetter(this.value)"
+                    class="inputSearchByFletter form-control bg-transparent text-white"
+                    placeholder="Search By First Letter" maxlength="1">
+            </div>
+            <div class="row mt-5 gy-4" id="searchByNameContainer">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="category" class="ms-2 mt-5">
+        <div class="container">
+            <div class="row gy-4" id="categoriesContainer">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="categoryMeals" class="ms-2 mt-5 d-none">
+        <div class="container">
+            <div class="row gy-4" id="categoryMealsContainer">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="area" class="mt-5">
+        <div class="container">
+            <div class="row gy-4" id="areaContainer">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="mt-5">
+        <div class="container">
+            <div class="row gy-4" id="ingredientsContainer">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="d-none position-relative">
+        <div class="container w-75 text-center">
+            <div class="row g-4" id="contactContainer">
+            </div>
+        </div>
+    </section>
+
+    <script src=" js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
